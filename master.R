@@ -35,8 +35,7 @@ library(furrr)
 library(future.apply)
 library(parallel)
 
-# Data -------------------------------------------------------------------------
-dat_main <- readRDS(file.path(here() %>% dirname(), 'cs-transfer/adb_swe.RDS'))
-dat_pdr <- read_sas(file.path(here() %>% dirname(), 'cs-transfer drugs/ut_r_lmed_29075_2022.sas7bdat'))
+# Load data --------------------------------------------------------------------
+source(here("01_dat_load.R"))
 
 
