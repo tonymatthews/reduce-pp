@@ -29,7 +29,7 @@ dat_miss <- cbind(dat_ref_anti, dat_main_miss)
 # Bring together main data with exrtra patient 
 dat_main <- rbind(dat_miss, dat_main_lopnr)
 
-# PDR data - has 4789 LopNrs, but REDUCE has only 4788 ppl - check why
+# PDR data - has 4789 LopNrs, but REDUCE has only 4788 ppl 
 dat_pdr <- read_sas(file.path(here() %>% dirname(), 
                               'cs-transfer drugs/ut_r_lmed_29075_2022.sas7bdat')) %>% 
   filter(LopNr != 2132) # remove LopNr that has no data in main reduce data

@@ -38,4 +38,7 @@ library(parallel)
 # Load data --------------------------------------------------------------------
 source(here("01_dat_load.R"))
 
+# Calculate non-adherence ------------------------------------------------------
+source(here("02_cr_adherence.R"))
+
 
