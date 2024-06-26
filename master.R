@@ -38,7 +38,10 @@ library(parallel)
 # Load data --------------------------------------------------------------------
 source(here("01_dat_load.R"))
 
-# Calculate non-adherence ------------------------------------------------------
-source(here("02_cr_adherence.R"))
+# Calculate the length of each BB dispensation after randomization--------------
+    # includes free text algorithm to identify how many pills per day
+    # PROBLEMS: a couple of very long lengths, but likely due to non-specific info in free text 
+                # (check after algorithm update)
+source(here("02_cr_pdr_bblength.R"))
 
 
