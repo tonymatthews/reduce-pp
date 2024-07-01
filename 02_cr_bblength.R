@@ -223,7 +223,7 @@ temp_bb_nonneg <- rbind(temp_bb_nonneg_difflength, temp_bb_nonneg_samelength_dif
 rm(temp_bb_nonneg_difflength, temp_bb_nonneg_samelength_differentstrength)
 
 # Bring all back together and do final -ve processing
-dat_pdr_bb <- temp_dat_pdr_bb |> 
+cr_bblength <- temp_dat_pdr_bb |> 
   
   # remove -ve same day and non -ve same day (processed above)
   filter(negative_sameday == 0 & nonnegative_sameday == 0) |> 
@@ -251,8 +251,6 @@ dat_pdr_bb <- temp_dat_pdr_bb |>
 
 rm(temp_dat_pdr_bb, temp_bb_neg, temp_bb_nonneg)
 
-
-######TEST
 
 
 

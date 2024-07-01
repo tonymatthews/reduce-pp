@@ -35,6 +35,9 @@ library(furrr)
 library(future.apply)
 library(parallel)
 
+# Global -----------------------------------------------------------------------
+grace <- 180
+
 # Load data --------------------------------------------------------------------
 source(here("01_dat_load.R"))
 
